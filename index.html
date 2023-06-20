@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason Lobe</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@500&display=swap");
+
+      body {
+        font-family: Roboto;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(132, 237, 249, 0.73)),
+          url("https://upload.wikimedia.org/wikipedia/commons/c/cd/Grenzgletscher_Vertikalaufnahme_%28Februar_2023%29.jpg");
+        background-size: cover;
+      }
+      p {
+        font-family: "PT Serif", Times, serif;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+      }
+      main > section {
+        margin-top: 3rem;
+        grid-column: 2 / 3;
+      }
+
+      main > section {
+        margin-top: 3rem;
+        grid-column: 2 / 3;
+      }
+      main > section:first-of-type {
+        text-align: center;
+      }
+      main > section:first-of-type img {
+        width: 200px;
+        height: 200px;
+      }
+      main > section:last-of-type {
+        margin-top: 5rem;
+      }
+      main > section:last-of-type p {
+        text-align: center;
+      }
+
+      a,
+      a:visited {
+        color: black;
+      }
+      a:active {
+        color: white;
+      }
+
+      div.two-up {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 1rem;
+        row-gap: 5rem;
+      }
+
+      .two-up section {
+        min-height: calc(0.5625 * 33vw);
+        /* width: calc(25vw + 1rem); */
+        text-align: center;
+      }
+
+      .two-up section:nth-child(2n + 1) {
+        grid-column: 1 / 4;
+      }
+      .two-up section:nth-child(2n) {
+        grid-column: 4 / 7;
+      }
+      div.two-up section .card {
+        height: 100%;
+        width: 100%;
+      }
+
+      div.two-up section .card iframe {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+      }
+
+      .corners {
+        --b: 1px; /* thickness of the border */
+        --c: black; /* color of the border */
+        --w: 1rem; /* width of border */
+
+        border: var(--b) solid #0000; /* space for the border */
+        --_g: #0000 90deg, var(--c) 0;
+        --_p: var(--w) var(--w) border-box no-repeat;
+        background: conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0 / var(--_p),
+          conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 / var(--_p),
+          conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% / var(--_p),
+          conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
+        padding: 3rem 0;
+        width: 36rem;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.675rem;
+        font-weight: 500;
+      }
+      h2 {
+        font-weight: 500;
+        letter-spacing: 0.125rem;
+        font-size: 1.5rem;
+      }
+      h1,
+      h2 {
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      @media (max-aspect-ratio: 1/1) {
+        main {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 class="corners">Jason Lobe</h1>
+        <img src="./images/JasonLobeHeadShot.png" alt="Picture of Jason Lobe's face" />
+        <p>Jason Lobe is a video editor based in Washington, DC.</p>
+      </section>
+      <section>
+        <h1>Work Samples</h1>
+        <div class="two-up">
+          <section>
+            <div class="card">
+              <h2>SMITHSONIAN CHANNEL</h2>
+              <iframe
+                src="https://player.vimeo.com/video/348493903?h=5dcb4c6dba"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section>
+            <div class="card">
+              <h2>WORLD OF WEAPONS</h2>
+              <iframe
+                src="https://player.vimeo.com/video/348481947?h=70b11e01e0"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section>
+            <div class="card">
+              <h2>YAHOO NEWS</h2>
+              <iframe
+                src="https://player.vimeo.com/video/287097128?h=e8d84394d6"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section>
+            <div class="card">
+              <h2>DEADLY DEMANDS</h2>
+              <iframe
+                src="https://player.vimeo.com/video/262454388?h=b6d9f8b811"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section>
+            <div class="card">
+              <h2>THOU SHALT NOT</h2>
+              <iframe
+                src="https://player.vimeo.com/video/262454320?h=d2587e4494"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section>
+            <div class="card">
+              <h2>CALASAG TRAILER</h2>
+              <iframe
+                src="https://player.vimeo.com/video/536941347?h=39fdd313c0"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section>
+            <div class="card">
+              <h2>LIPSTICK AND LEATHER TRAILER</h2>
+              <iframe
+                src="https://player.vimeo.com/video/536931465?h=83c4df9ffa"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section>
+            <div class="card">
+              <h2>EXOTIC TRAILER</h2>
+              <iframe
+                src="https://player.vimeo.com/video/262454699?h=2ed52989b0"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section>
+            <div class="card">
+              <h2>NIGHT WAKING TRAILER</h2>
+              <iframe
+                src="https://player.vimeo.com/video/536935091?h=b5004dff11"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section>
+            <div class="card">
+              <h2>THE LAUGHING CLUB TRAILER</h2>
+              <iframe
+                src="https://player.vimeo.com/video/447822284?h=94beddc118"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section>
+        <h1>Contact</h1>
+        <p>Email: <a href="mailto:jason@jasonlobe.com"> jason@jasonlobe.com</a></p>
+      </section>
+    </main>
+  </body>
+</html>
